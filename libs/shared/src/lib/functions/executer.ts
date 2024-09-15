@@ -8,19 +8,22 @@ import { cloudFunctionError, serviceErrorHandler } from '../error-handlers';
  * @param body The GCP request body
  */
 export async function executeFunction<T>(
-  service: (body: T) => Promise<void>,
+  service: (body: T) => Promise<any>,
   body: T,
   res: ff.Response
 ) {
+  let response;
   try {
     try {
-      await service(body);
+      response = await service(body);
     } catch (error: unknown) {
       serviceErrorHandler(error);
       throw new Error('Service level error occured, check logs for details');
     }
 
-    res.status(200).send('Function Completed Successfully')
+    if (!response) response = 'Function Completed Successfully';
+
+    res.status(200).send(response);
   } catch (error: unknown) {
     cloudFunctionError(error);
     res.status(500).send((error as Error).message);

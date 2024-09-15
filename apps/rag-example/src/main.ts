@@ -2,14 +2,8 @@ import * as ff from '@google-cloud/functions-framework'
 
 import { FunctionNames, executeFunction } from '@gcp-functions/shared';
 
-ff.http(FunctionNames.RAG_EXAMPLE, async (req, res) => {
-  await executeFunction<any>(
-    x,
-    req.body,
-    res
-  )
-});
+import { ragExampleLib } from '@gcp-functions/rag-example-lib';
 
-async function x (body: any) {
-  console.log(body);
-}
+ff.http(FunctionNames.RAG_EXAMPLE, async (req, res) => {
+  await executeFunction<any>(ragExampleLib, req.body, res);
+});
