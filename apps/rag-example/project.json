@@ -1,8 +1,7 @@
 {
-  "name": "gcpFunctions",
-  "$schema": "node_modules/nx/schemas/project-schema.json",
-  "includedScripts": [],
-  "sourceRoot": "src",
+  "name": "rag-example",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/rag-example/src",
   "projectType": "application",
   "tags": [],
   "targets": {
@@ -12,12 +11,12 @@
       "defaultConfiguration": "production",
       "options": {
         "platform": "node",
-        "outputPath": "dist/gcpFunctions",
+        "outputPath": "dist/apps/rag-example",
         "format": ["cjs"],
         "bundle": false,
-        "main": "src/main.ts",
-        "tsConfig": "tsconfig.app.json",
-        "assets": ["src/assets"],
+        "main": "apps/rag-example/src/main.ts",
+        "tsConfig": "apps/rag-example/tsconfig.app.json",
+        "assets": ["apps/rag-example/src/assets"],
         "generatePackageJson": true,
         "esbuildOptions": {
           "sourcemap": true,
@@ -43,15 +42,15 @@
       "defaultConfiguration": "development",
       "dependsOn": ["build"],
       "options": {
-        "buildTarget": "gcpFunctions:build",
+        "buildTarget": "apps/rag-example-example:build",
         "runBuildTargetDependencies": false
       },
       "configurations": {
         "development": {
-          "buildTarget": "gcpFunctions:build:development"
+          "buildTarget": "apps/rag-example-example:build:development"
         },
         "production": {
-          "buildTarget": "gcpFunctions:build:production"
+          "buildTarget": "apps/rag-example-example:build:production"
         }
       }
     }

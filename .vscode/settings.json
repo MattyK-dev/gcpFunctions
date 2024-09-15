@@ -1,0 +1,156 @@
+{
+  "files.autoSave": "afterDelay",
+  "explorer.confirmDelete": false,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.tabCompletion": "on",
+  "editor.suggestSelection": "first",
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "vsintellicode.typescript.completionsEnabled": true,
+  "vsintellicode.modify.editor.suggestSelection": "enabled",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": true,
+  "explorer.confirmDragAndDrop": false,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnType": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.defaultProfile.linux": "bash (login)",
+  "terminal.integrated.profiles.linux": {
+    "bash (login)": {
+      "path": "bash",
+      "args": [
+        "-l"
+      ],
+      "icon": "terminal-bash"
+    },
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "settingsSync.ignoredExtensions": [],
+  // "[prisma]": {
+  //   "editor.defaultFormatter": "Prisma.prisma"
+  // },
+  "terminal.integrated.windowsEnableConpty": true,
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": [
+      "document"
+    ],
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.fontLigatures": false,
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "gitlens.rebase"
+  },
+  "git.suggestSmartCommit": false,
+  "[dockercompose]": {
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    }
+  },
+  "editor.largeFileOptimizations": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.inlineSuggest.enabled": true,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "yaml": true,
+    "typescript": true,
+    "javascript": false
+  },
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "monokai-simple",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.profiles.windows": {
+    "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe (migrated)": {
+      "path": "C:\\windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": []
+    }
+  },
+  "update.mode": "manual",
+  "debug.javascript.autoAttachFilter": "disabled",
+  "editor.renderWhitespace": "boundary",
+  "editor.renderControlCharacters": true,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "protoc": {},
+  "graphql-config.load.rootDir": "",
+  "graphql-config.load.filePath": "",
+  "settingsSync.ignoredSettings": [],
+  "intellicodeCompletions.language.javascript": true,
+  "intellicodeCompletions.language.typescript": true,
+  "redhat.telemetry.enabled": true,
+  "boot-java.change-detection.on": true,
+  "boot-java.scan-java-test-sources.on": true,
+  "boot-java.support-spring-xml-config.on": true,
+  "spring-boot.ls.java.heap": "",
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "java.debug.settings.vmArgs": "-Dfile.encoding=UTF-8",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "xml.server.vmargs": "-Xmx128M",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.autofetch": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "switch:command"
+  ],
+  "java.debug.settings.showStaticVariables": true,
+  "boot-java.rewrite.reconcile": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.accessibilitySupport": "off",
+  "window.zoomLevel": -1,
+  "editor.minimap.enabled": false,
+  "git.openRepositoryInParentFolders": "never",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.confirmSync": false,
+  "nxConsole.showNodeVersionOnStartup": false
+}

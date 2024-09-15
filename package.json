@@ -3,9 +3,12 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
-    "build": "nx build",
-    "test": "nx test"
+    "build:all": "nx run-many --target=build --all --maxParallel=3",
+    "test:all": "nx run-many --target=test --all --maxParallel=3",
+    "lint:all": "nx run-many --target=lint --all --maxParallel=3 ",
+    "clear:cache": "nx reset",
+    "list:all": "nx show projects",
+    "ragExample:start": "functions-framework --target=ragExample --port=4001 --source=dist/apps/rag-example/main.js"
   },
   "private": true,
   "dependencies": {
