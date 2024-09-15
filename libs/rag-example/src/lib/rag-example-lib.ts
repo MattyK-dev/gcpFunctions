@@ -58,7 +58,7 @@ export async function ragExampleLib(body: any): Promise<string> {
       },
       {
         role: 'user',
-        content: 'Using the context: ' + +'Answer the question: ' + question,
+        content: 'Using the context: ' + contextString +'Answer the question: ' + question,
       },
     ],
   });
