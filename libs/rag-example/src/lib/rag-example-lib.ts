@@ -21,7 +21,7 @@ export async function ragExampleLib(body: any): Promise<string> {
   const client = new ChromaClient({
     auth: {
       provider: 'token',
-      credentials: '',
+      credentials: process.env.SECRET_TOKEN!
     },
     path: 'http://localhost:8000',
   });
