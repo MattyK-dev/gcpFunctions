@@ -21,7 +21,7 @@
   "editor.tabSize": 2,
   "[typescript]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
